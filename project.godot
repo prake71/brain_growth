@@ -13,6 +13,10 @@ config_version=4
 config/name="brain_growth"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/height=800
+
 [physics]
 
 common/enable_pause_aware_picking=true
@@ -22,4 +26,3 @@ common/enable_pause_aware_picking=true
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
-environment/default_environment="res://default_env.tres"
