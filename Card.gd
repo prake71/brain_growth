@@ -1,7 +1,7 @@
 extends TextureButton
 
 
-var value
+var value = null
 var face = preload("res://assets/cards/card-1.png")
 var back = preload("res://assets/cards/card-back.png")
 var face_up = false
@@ -20,10 +20,12 @@ func _ready():
 #func _process(delta):
 #	pass
 func _pressed():
-	if get_normal_texture() == back:
-		set_normal_texture(face)
-		face_up = true
-	else:
+	GameManager.choose_card(self)
+
+func flip():
+	if face_up:
 		set_normal_texture(back)
 		face_up = false
-		
+	else:
+		set_normal_texture(face)
+		face_up = true

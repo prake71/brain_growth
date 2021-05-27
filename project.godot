@@ -8,14 +8,24 @@
 
 config_version=4
 
+_global_script_classes=[  ]
+_global_script_class_icons={
+}
+
 [application]
 
 config/name="brain_growth"
 config/icon="res://icon.png"
 
+[autoload]
+
+GameManager="*res://GameManager.tscn"
+
 [display]
 
 window/size/height=800
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [physics]
 
