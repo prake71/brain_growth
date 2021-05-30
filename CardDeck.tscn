@@ -27,7 +27,7 @@ anchor_bottom = 1.0
 margin_left = 20.0
 margin_top = 20.0
 margin_right = -20.0
-margin_bottom = -20.0
+margin_bottom = -130.0
 columns = 8
 __meta__ = {
 "_edit_use_anchors_": false
