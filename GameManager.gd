@@ -52,8 +52,6 @@ func check_cards():
 	else:
 		$FlipTimer.start()
 
-
-
 func _on_FlipTimer_timeout():
 	# flip cards back
 	card1.flip()
@@ -74,14 +72,19 @@ func _on_MatchTimer_timeout():
 
 func _on_PlayTimer_timeout():
 	playtime += 1
+	if playtime >= MAX_TIME:
+		game_over()
+	
 
 func game_over():
 	if (matches == NUM_PAIRS) and (playtime < MAX_TIME):
+		
+		
 		print("You won!")
 	else:
 		print("You lose!")
 		
-		# show game over screen
+		# show game over or win screen
 		pass
 		
 
